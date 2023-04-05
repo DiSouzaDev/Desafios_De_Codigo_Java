@@ -1,27 +1,37 @@
 import java.util.*;
 
-public class FabricaDeCarro{
+public class FabricaDeCarro {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-	    Scanner scan = new Scanner(System.in);
-        int custoFabrica = scan.nextInt();
-	    int porcentagemDistribuidor = scan.nextInt();
-	    int PercentualImpostos = scan.nextInt();
+        boolean continueCodigo = false;
+
+        do{
+            try{
+                Scanner scan = new Scanner(System.in);
+                int custoFabrica = scan.nextInt();
+                int porcentagemDistribuidor = scan.nextInt();
+                int PercentualImpostos = scan.nextInt();
+         
+                int Distribuidor;
+                int ValorImpostos;
+                int ValorFinal;
      
-            int Distribuidor;
-            int ValorImpostos;
-            int ValorFinal;
- 
-        // TODO: Implemente uma condição que calcule a porcentagem do distribuidor e dos impostos:
- 
-        Distribuidor = (custoFabrica * porcentagemDistribuidor) / 100;
-        ValorImpostos = (custoFabrica * PercentualImpostos) / 100;
+                // TODO: Implemente uma condição que calcule a porcentagem do distribuidor e dos impostos:
+     
+                Distribuidor = (custoFabrica * porcentagemDistribuidor) / 100;
+                ValorImpostos = (custoFabrica * PercentualImpostos) / 100;
+    
+                ValorFinal = custoFabrica + Distribuidor + ValorImpostos;
+     
+                System.out.println(ValorFinal);
 
-        ValorFinal = custoFabrica + Distribuidor + ValorImpostos;
- 
-        System.out.println(ValorFinal);
-
-        scan.close();
+                continueCodigo = true;
+    
+                scan.close();
+            } catch (InputMismatchException err) {
+                System.out.println("Erro! O valor digitado não é válido. Tente novamente!");
+            }
+        } while (continueCodigo == false);
 	}
 }

@@ -5,8 +5,12 @@ import java.util.Scanner;
 public class ImprimindoPositivosMedia {
 
     public static void main(String[] args) throws IOException {
-        try (Scanner leitor = new Scanner(System.in)) {
+
+        boolean continueCodigo = false;
+
+        do {
             try {
+                Scanner leitor = new Scanner(System.in);
                 int cont = 0;
                 double media = 0;
                 double valorUsuario;
@@ -28,9 +32,12 @@ public class ImprimindoPositivosMedia {
                 media = media / cont;
                 System.out.println(cont + " valores positivos");
                 System.out.println(String.format("%.1f", media));
+                continueCodigo = true;
+                leitor.close();
             } catch (InputMismatchException err) {
                 System.out.println("Erro! O valor digitado não é válido. Tente novamente!");
             }
-        }
+
+        } while (continueCodigo == false);
     }
 }
