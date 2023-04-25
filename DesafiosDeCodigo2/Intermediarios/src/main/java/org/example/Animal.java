@@ -11,9 +11,6 @@ public class Animal {
         Scanner sc = new Scanner(System.in);
         boolean continuarCodigo = false;
         String AN1, AN2, AN3;
-        AN1 = "";
-        AN2 = "";
-        AN3 = "";
         Map<Animais, String> listaAnimais = new HashMap<>(){{
             put(new Animais("vertebrado", "ave", "carnivoro"), "aguia");
             put(new Animais("vertebrado", "ave", "onivoro"), "pomba");

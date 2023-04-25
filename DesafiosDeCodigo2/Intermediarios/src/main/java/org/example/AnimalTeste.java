@@ -1,4 +1,3 @@
-
 //Método para resolver o desafio de código: AnimaL. Ele não é válido, pois falha no teste fechado 6 (desconheço o motivo).
 //Vi que usar ifs não era o objetivo do desafio, então testei um novo e nomei de Animal, mas vou deixar este como um demontrativo.
 
