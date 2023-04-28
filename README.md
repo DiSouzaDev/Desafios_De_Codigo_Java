@@ -1,4 +1,5 @@
 # Desafios de código DIO
+# Básico
 ## Desafio de código 1: Fábrica de Carros
 O custo de um carro novo ao consumidor é a soma do custo de fábrica com a porcentagem do distribuidor e dos impostos (aplicados ao custo de fábrica). O gerente de uma loja de carros gostaria de um programa para calcular o preço de um carro novo para os clientes. Você receberá o custo de fábrica e as porcentagens referentes ao distribuidor e os impostos e deverá escrever programa para ler esses valores e imprimir o valor final do carro.
 
@@ -55,3 +56,21 @@ O arquivo de entrada contém um valor inteiro N (0 < N < 46).
 Os valores devem ser mostrados na mesma linha, separados por um espaço em branco. Não deve haver espaço após o último valor.
 
 [Solução](https://github.com/Diogo-Javax888/Desafios_De_Codigo_Java/blob/main/DesafiosDeCodigo/src/FibonacciFacil.java)
+
+# Avançado
+## Desafio: Animal
+Neste problema, você deverá ler 3 palavras que definem o tipo de animal possível segundo o esquema abaixo, da esquerda para a direita.  Em seguida conclua qual dos animais seguintes foi escolhido, através das três palavras fornecidas.
+
+<div align="center">
+  <img widt="300" height="300" src="https://resources.urionlinejudge.com.br/gallery/images/problems/UOJ_1049_b.png" />
+</div>
+
+## Entrada
+A entrada contém 3 palavras, uma em cada linha, necessárias para identificar o animal segundo a figura acima, com todas as letras minúsculas.
+
+## Saída
+Imprima o nome do animal correspondente à entrada fornecida.
+
+[Solução 1](https://github.com/Diogo-Javax888/Desafios_De_Codigo_Java/blob/main/DesafiosDeCodigo2/Intermediarios/src/main/java/org/example/Animal.java)
+
+[Solução 2](https://github.com/Diogo-Javax888/Desafios_De_Codigo_Java/blob/main/DesafiosDeCodigo2/Intermediarios/src/main/java/org/example/AnimalTeste.java)
